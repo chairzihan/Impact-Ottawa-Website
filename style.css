@@ -1,7 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 body{
     background-color: #f0f0f0;
     font-family: "GFS Didot", serif;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+}
+
+section {
+    display: none;
+    padding-top: 3%;
+}
+
+section.active {
+    display: block;
+}
+
+#main-nav {
+    background-color: #2d9bf5;
+    color: white;
+    text-align: center;
+    position: fixed; 
+    padding:2px;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    z-index: 1000; 
+}
+#main-nav a {
+    text-decoration: none; 
+    color: white;
+    padding: 10px 15px; 
+    display: inline-block; 
+}
+
+#main-nav a:hover {
+    background-color: #575757; 
+    transition: background-color 0.3s ease;
 }
