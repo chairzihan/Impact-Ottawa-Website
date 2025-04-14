@@ -5,14 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Impact Ottawa</title>
     <link rel="stylesheet" href="style.css">
-    <script src="switch.js"></script>
-    <script src="gallerySwapPic.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    
 </head>
 <body> 
     <nav id="main-nav">
-        <img src="images\impactOttawaLogo2.png" alt="Logo" id="nav-logo">
+        <img src="images/impactOttawaLogo2.png" alt="Logo" id="nav-logo">
         <div id="nav-links">
             <a href="#home">Home</a>
             <a href="#events">Events</a>
@@ -21,28 +18,26 @@
         </div>
     </nav>
     
-    <section id="home">
-        <h1>Home</h1>
-
-       
-    <div class="container">
-	<div class="images">
-		<img src="images\brownieCookieImg.jpg"/>
-		<img src="images\cake.jpg"/>
-		<img src="images\moreCookie.jpg"/>
-	</div>
-	<span class="next"id="next-btn"><i class="fa fa-chevron-right" aria-hidden="true"></i>
-</span>
-	<span class="prev"id="prev-btn"><i class="fa fa-chevron-left" aria-hidden="true"></i></i>
-</span>
-	<div class="balls">
-		<span class="ball active"></span>
-		<span class="ball"></span>
-		<span class="ball"></span>
-		<span class="ball"></span>
-	</div>
-</div>  
-    </section>  
+    <section id="home" class="active home-section">
+        <div id="home-header">
+        <h1 id="impactHeader">IMPACT</h1>
+        <h1 id="ottawaHeader">OTTAWA</h1>
+        </div>
+        <div class="gallery-container">
+            <div class="slider">
+                <img src="images/brownieCookieImg.jpg" alt="Brownie cookies">
+                <img src="images/cake.jpg" alt="Delicious cake">
+                <img src="images/moreCookie.jpg" alt="More cookies">
+            </div>
+            <button id="prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <button id="next-btn"><i class="fas fa-chevron-right"></i></button>
+            <div class="nav-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
     
     <section id="events">
         <h1>Services</h1>
@@ -56,6 +51,7 @@
         <h1>About Us</h1>
     </section>
 
-   
+    <script src="gallerySwapPic.js"></script>
+    <script src="switch.js"></script>
 </body>
 </html>
