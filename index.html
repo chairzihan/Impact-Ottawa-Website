@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Impact Ottawa</title>
+    <script src="gallerySwapPic.js"></script>
+    <script src="switch.js"></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
@@ -12,46 +14,46 @@
         <img src="images/impactOttawaLogo2.png" alt="Logo" id="nav-logo">
         <div id="nav-links">
             <a href="#home">Home</a>
-            <a href="#events">Events</a>
             <a href="#contacts">Contact</a>
-            <a href="#about-us">About Us</a>
         </div>
     </nav>
     
     <section id="home" class="active home-section">
         <div id="home-header">
-        <h1 id="impactHeader">IMPACT</h1>
-        <h1 id="ottawaHeader">OTTAWA</h1>
+            <div id="header-wrapper">
+                <h1 id="impactHeader">IMPACT</h1>
+                <h1 id="ottawaHeader">OTTAWA</h1>
+            </div>
+        <h2 id="homeSubHeader">A community effort in <br>creating a better world</h2>    
+        <p1 id="homeText">Come join us in helping those in need through<br> sweet treats and our community!</p1>
         </div>
-        <div class="gallery-container">
-            <div class="slider">
-                <img src="images/brownieCookieImg.jpg" alt="Brownie cookies">
-                <img src="images/cake.jpg" alt="Delicious cake">
-                <img src="images/moreCookie.jpg" alt="More cookies">
-            </div>
-            <button id="prev-btn"><i class="fas fa-chevron-left"></i></button>
-            <button id="next-btn"><i class="fas fa-chevron-right"></i></button>
-            <div class="nav-dots">
-                <span class="dot active"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
+
+        <div id="about-us">
+            <h1>About Us</h1>
+        <div class="about-us-content">
+            <p>We are a non-profit organization founded by highschoolers. Our <br>goal is to create a community where people can share their love of baking while <br>also supporting a good cause. All <br>of our profits go to helping children in poverty.</p>
+            <div class="gallery-container">
+                <div class="slider">
+                    <img src="images/brownieCookieImg.jpg" alt="Brownie cookies">
+                    <img src="images/cake.jpg" alt="Delicious cake">
+                    <img src="images/moreCookie.jpg" alt="More cookies">
+                </div>
+                <button id="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button id="next-btn"><i class="fas fa-chevron-right"></i></button>
+                <div class="nav-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div<div class="about-us-content">
+                <div class="about-us-text">
+                    <p>We are a non-profit organization founded by highschoolers. Our goal is to create a community where people can share their love of baking while also supporting a good cause. All of our profits go to helping children in poverty.</p>
+                </div>
         </div>
     </section>
-    
-    <section id="events">
-        <h1>Services</h1>
-    </section>
-    
     <section id="contacts">
         <h1>Contacts</h1>
     </section>  
-    
-    <section id="about-us">
-        <h1>About Us</h1>
-    </section>
-
-    <script src="gallerySwapPic.js"></script>
-    <script src="switch.js"></script>
+   
 </body>
 </html>

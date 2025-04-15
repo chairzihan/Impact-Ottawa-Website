@@ -9,20 +9,37 @@ body{
 
 section {
     display: none;
-    padding-top: 4%;
+
     transition: all 0.5s ease-in-out;
 }
 
 section.active {
     display: block;
     transition: all 0.5s ease-in-out;
+
 }
 
+#about-us {
+    margin-top: 600px; /* Adjust this value to move it below the #home-header */
+    padding: 20px; /* Optional: Add padding for spacing inside the div */
+    background-color: #d6d6d6; /* Optional: Add a background color */
+    z-index: 3;
+    min-height: 100%;
+    position: relative;
+    width:100%;
+}
+
+.about-us-content{
+    display: flex; /* Use Flexbox to align text and gallery side by side */
+    align-items: center; /* Vertically align the text and gallery */
+    justify-content: space-between; /* Add space between the text and gallery */
+    gap: 20px; /* Add spacing between the text and gallery */
+}
 #main-nav {
     display: flex; 
     align-items: center; 
     justify-content: center; 
-    background-color: #2d9bf5;
+    background-color: #ffffff;
     color: white;
     position: fixed;
     top: 0;
@@ -34,77 +51,118 @@ section.active {
 }
 
 #nav-logo {
-    height: 100px; 
+    height: 150px; 
     width:auto;
     margin-right: auto;
+    position: relative;
+    bottom:6px;
 }
 
 #nav-links {
     display: flex;
-    justify-content: center; 
-    flex-grow: 1; 
+    justify-content: flex-end; /* Align links to the left */
     gap: 15px;
-
+    width:100%;
+    margin-right: 100px; /* Add some space from the right */
 }
 
 #main-nav a {
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 10px 15px;
     display: inline-block;
 }
 
 #main-nav a:hover {
-    background-color: #575757;
+    background-color: #001e5a;
+    color: white;
     transition: background-color 0.3s ease;
-    transform: translateX(20px);
+    border-radius: 10px;
 }
 
 section.active.home-section{
     display:flex;
 }
 
-.home-section{
-    align-items: center; 
-    justify-content: center; 
-    position: relative; 
-    gap: 20px;
-}
-
 #home-header {
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-align: center;
-    background-color: #093e69;
-    width:100%;
-    height:50%;
-    border-radius: 10px;
+    background-image: linear-gradient(to right, #093e69, #1de7c5);
+    height:600px;
+    max-width:100%;
+    position:absolute;
     font-family: "Anton", sans-serif;
     display: flex; 
     align-items: center; 
-    justify-content: center; 
-    position: relative; 
-    gap: 20px;
+    justify-content: flex-start; 
+    padding-left: 100px;
+    gap: 10px;
+    flex-wrap: wrap;
     z-index: 1;
+    flex:1;
+    margin-top: 20px;
+    box-shadow:  0 0 20px #111;
 }
 
+#impactHeader, #ottawaHeader {
+    display: inline-block; /* Keep them inline */
+    vertical-align: middle; /* Align vertically */
+    top:50%;
+    transform: none; /* Remove all transforms */
+    position: static; /* Return to normal flow */
+
+}
+
+.header-wrapper {
+    display: flex; /* Align headers horizontally */
+    align-items: center; /* Vertically align headers */
+    gap: 10px; /* Add spacing between "Impact" and "Ottawa" */
+    position: relative;
+
+    /* Shift the headers together */
+    transform: translate(90px, 30px); /* Adjust X (horizontal) and Y (vertical) values */
+}
 #impactHeader{
-    color:#1de7c5
+    color:#0bb99c;
+    background-color: #021829;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top:45%;
+    transform:translateX(+500px);
 }
 #ottawaHeader{
-    color:#000000
+    color:#000000;
+    margin-left: 10px;
+    transform:translateX(+500px);
+    margin-top:45%;
+    
+}
+#homeText {
+    font-family:"GFS Didot", serif; 
+    color: #000000;
+    font-size: 1.5rem;
+    position:relative;
+    top: -200px;
+    left: -75px;
+    text-align: left;
+}
+#homeSubHeader{
+    font-family:"GFS Didot", serif; 
+    color: #050334;
+    font-size: 2rem;
+    position:relative;
+    top: 20px;
+    left: -550px;
 }
 .gallery-container {
-    width: 1000px;
-    height: 600px;
-    position: relative;
+    width: 500px;
+    height: 500px;
+    position: absolute;
     overflow: hidden;
-    margin-top:20%;
-    margin-right:0%;
     margin: 50px auto;
-    box-shadow: 0 0 20px #111;
     border-radius: 10px;
     z-index: 2;
-    transform: translateX(-50px); /* Move the gallery upward to overlap the header */
+    transform: translateX(10%);
 }
 
 .images {
@@ -141,28 +199,6 @@ section.active.home-section{
     right: 0;
 }
 
-.balls-container {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 10px;
-    z-index: 10;
-}
-
-.ball {
-    width: 10px;
-    height: 10px;
-    border: 1px solid honeydew;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.ball.active {
-    background-color: honeydew;
-}
 
 /* Add this to your existing CSS */
 .gallery-container {
