@@ -20,21 +20,32 @@ section.active {
 }
 
 #about-us {
-    margin-top: 600px; /* Adjust this value to move it below the #home-header */
-    padding: 20px; /* Optional: Add padding for spacing inside the div */
-    background-color: #d6d6d6; /* Optional: Add a background color */
+    margin-top: 650px; /* Ensure it is below the home header */
+    padding: 20px;
+    background-color: #d6d6d6;
     z-index: 3;
-    min-height: 100%;
     position: relative;
-    width:100%;
+    width: 100%;
+    flex-direction: row;
+    height:400px;
+}
+#about-us-header {
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 20px; /* Add spacing below the header */
+    color: #000000;
+    font-family: "Anton", sans-serif;
+    font-weight: bold;
+ /* Move the header to the top of the flex container */
 }
 
-.about-us-content{
-    display: flex; /* Use Flexbox to align text and gallery side by side */
-    align-items: center; /* Vertically align the text and gallery */
-    justify-content: space-between; /* Add space between the text and gallery */
-    gap: 20px; /* Add spacing between the text and gallery */
+.about-us-content {
+    display: flex;
+    flex-direction: column; /* Stack the header, text, and gallery vertically */
+    align-items: right; /* Center-align the content */
+    gap: 20px; /* Add spacing between the header, text, and gallery */
 }
+
 #main-nav {
     display: flex; 
     align-items: center; 
@@ -88,7 +99,7 @@ section.active.home-section{
     font-size: 3rem;
     text-align: center;
     background-image: linear-gradient(to right, #093e69, #1de7c5);
-    height:600px;
+    height:650px;
     max-width:100%;
     position:absolute;
     font-family: "Anton", sans-serif;
@@ -155,14 +166,16 @@ section.active.home-section{
     left: -550px;
 }
 .gallery-container {
-    width: 500px;
+    width: 600  px;
     height: 500px;
     position: absolute;
     overflow: hidden;
     margin: 50px auto;
     border-radius: 10px;
     z-index: 2;
-    transform: translateX(10%);
+    transform: translateX(+45%);
+    bottom: 55%
+    
 }
 
 .images {
