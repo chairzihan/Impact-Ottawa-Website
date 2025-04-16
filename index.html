@@ -6,6 +6,8 @@
     <title>Impact Ottawa</title>
     <script src="gallerySwapPic.js"></script>
     <script src="switch.js"></script>
+    <script src="donate.js"></script>
+    <script type="module" src="3DModel.js"></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
@@ -34,7 +36,7 @@
     <div id="about-us">
         <div class="about-us-content">
             <h1 id="about-us-header">About Us</h1>
-            <p>We are a non-profit organization founded by highschoolers. Our <br>goal is to create a community where people can share their love of <br>baking while also supporting a good cause. All of our profits<br> go to helping children in poverty.</p>
+            <p id="about-us-text">We are a non-profit organization founded by highschoolers. Our <br>goal is to create a community where people can share their love of <br>baking while also supporting a good cause. All of our profits<br> go to helping children in poverty.</p>
         </div>
             <div class="gallery-container">
                 <div class="slider">
@@ -50,7 +52,7 @@
                     <span class="dot"></span>
                 </div>
             </div>
-    </div>
+    </div> 
     </section>
     <section id="contacts">
         <div class="contacts-container">
@@ -93,8 +95,24 @@
     </section>
 
     <section id="donate">
-        <div class="donate-container">
-            
+        <div class="donation-container">
+            <h1 class="donation-title">Support Our Cause</h1>
+                <div class="donation-options">
+                    <div class="donation-card">
+                        <div class="donation-icon">
+                         <i class="fas fa-heart"></i>
+                        </div>
+                        <p>Donate a custom amount to support our community efforts</p>
+                        <div class="custom-amount">
+                        <span>$</span>
+                        <input type="number" placeholder="Amount" min="1">
+                        <button class="donate-btn custom">Donate</button>
+                        </div>
+               
+                    </div>
+                </div>
+
+                <div class="3Dmodel" id="coinModel"></div>
         </div>
-</body>
+    </section>
 </html>

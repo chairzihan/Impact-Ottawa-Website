@@ -27,6 +27,159 @@ section.active {
     position: relative;
 }
 
+/* Donation Page Styles */
+#donate {
+    position: relative;
+    padding: 100px 20px;
+    background-image: linear-gradient(to right, #093e69, #1de7c5);
+    max-height: 100vh;
+    display: none;
+    z-index: 2;
+}
+
+#coinModel canvas{
+
+    z-index: 3;
+    height:50vh;
+    width:50vw;
+    position: absolute;
+    top:0;
+    left:-20%;
+    
+}
+
+#donate.active {
+    display: block;
+}
+
+.donation-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.donation-title {
+    text-align: right;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    margin-right:150px;
+    color: #002645;
+    font-family: "Anton", sans-serif;
+    letter-spacing: 1px;
+}
+
+.donation-options {
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 60px;
+    margin-right:120px;
+}
+
+.donation-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    z-index: 5;
+}
+
+.donation-card:hover {
+    transform: translateY(-10px);
+}
+
+.donation-icon {
+    font-size: 2.5rem;
+    color: #2d9bf5;
+    margin-bottom: 20px;
+}
+
+.donation-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+    font-family: "Anton", sans-serif;
+}
+
+.donation-card p {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.donate-btn {
+    display: inline-block;
+    background: #2d9bf5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-family: "GFS Didot", serif;
+    font-size: 1rem;
+}
+
+.donate-btn:hover {
+    background: #1a7bc8;
+}
+
+.custom-amount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.custom-amount input {
+    width: 80px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    font-family: "GFS Didot", serif;
+}
+
+.donation-info {
+    background: white;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.donation-info h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: #333;
+    font-family: "Anton", sans-serif;
+}
+
+.donation-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.donation-info li {
+    margin-bottom: 15px;
+    color: #666;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.donation-info i {
+    color: #2d9bf5;
+    font-size: 1.2rem;
+}
+
 
 #about-us {
     padding: 20px;
@@ -36,6 +189,10 @@ section.active {
     width: 100%;
     flex-direction: row;
     height:400px;
+}
+
+#about-us-text{
+    color:white;
 }
 #about-us-header {
     font-size: 2rem;
@@ -50,11 +207,10 @@ section.active {
 #contacts {
     position: relative;
     padding: 100px 20px 60px;
-    background-color: #252525;
-    min-height: 100vh;
+    background-image: linear-gradient(to right, #093e69, #1de7c5);
+    max-height: 80vh;
     display: none;
     z-index: 2;
-    min-height: 80vh;
 }
 
 #contacts.active {
