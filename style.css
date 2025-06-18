@@ -27,6 +27,64 @@ section.active {
     position: relative;
 }
 
+#email-signup {
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+    
+    border-top: 1px solid #ddd;
+}
+
+.signup-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#emailForm {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+#emailInput {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 60%;
+    font-family: "GFS Didot", serif;
+    font-size: 1rem;
+}
+
+.signup-btn {
+    background: #2d9bf5;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Anton", sans-serif;
+    letter-spacing: 1px;
+    transition: background 0.3s ease;
+}
+
+.signup-btn:hover {
+    background: #1a7bc8;
+}
+
+.signup-message {
+    color: #666;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+#formMessage {
+    margin-top: 15px;
+    min-height: 20px;
+    color: #2d9bf5;
+    font-weight: bold;
+}
+
 /* Donation Page Styles */
 #donate {
     position: relative;
@@ -183,7 +241,7 @@ section.active {
 
 #about-us {
     padding: 20px;
-    background-color: #d6d6d6;
+    background-color: #ffffff;
     z-index: 3;
     position: relative;
     width: 100%;
@@ -192,7 +250,8 @@ section.active {
 }
 
 #about-us-text{
-    color:white;
+    color:rgb(0, 0, 0);
+    font: size 1.2em;
 }
 #about-us-header {
     font-size: 2rem;

@@ -8,6 +8,7 @@
     <script src="switch.js"></script>
     <script src="donate.js"></script>
     <script type="module" src="3DModel.js"></script>
+    <script src="email-signup.js"></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
@@ -53,6 +54,18 @@
                 </div>
             </div>
     </div> 
+
+    <div id="email-signup">
+        <div class="signup-container">
+            <h3>Stay Updated on Our Events</h3>
+            <form id="emailForm">
+                <input type="email" id="emailInput" placeholder="Enter your email" required>
+                <button type="submit" class="signup-btn">Subscribe</button>
+            </form>
+            <p class="signup-message">We'll notify you about upcoming events and volunteer opportunities</p>
+            <div id="formMessage"></div>
+        </div>
+    </div>
     </section>
     <section id="contacts">
         <div class="contacts-container">
